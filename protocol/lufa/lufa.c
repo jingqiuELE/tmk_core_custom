@@ -608,6 +608,10 @@ int main(void)
 #endif
 
     print("Keyboard start.\n");
+    debug_enable = true;
+    debug_matrix = true;
+    debug_keyboard = true;
+
     hook_late_init();
     while (1) {
         while (USB_DeviceState == DEVICE_STATE_Suspended) {
