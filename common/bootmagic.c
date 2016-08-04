@@ -118,8 +118,8 @@ void bootmagic(void)
         eeconfig_write_default_layer(default_layer);
         default_layer_set((uint32_t)default_layer);
     } else {
-        default_layer = eeconfig_read_default_layer();
-        default_layer_set((uint32_t)default_layer);
+        //default_layer = eeconfig_read_default_layer();
+        //default_layer_set((uint32_t)default_layer);
     }
 
 #ifdef PS2_MOUSE_ENABLE
